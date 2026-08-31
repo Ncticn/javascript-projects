@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "YoungSerif Regular";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+
+    /* Font Family */
+    --font-outfit: "Outfit", sans-serif;
+    --font-youngSerif-Regular: "Young Serif", serif;
+
+    /* Colors */
+    --color-rose-800: #7A284E;
+    --color-rose-50: #FFF7FB;
+    --color-stone-900: #312E2C;
+    --color-stone-600: #5F564D;
+    --color-stone-150: #E3DDD7;
+    --color-stone-100: #F3E5D7;
+    --color-brown-800: #854632;
+    --color-white: #FFFFFF;
+
+    /* Spacing */
+    --spacing-1600: 128px;
+    --spacing-600: 48px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-stone-100);
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+
+
+.text-preset-1 {
+    font-family: var(--font-youngSerif-Regular);
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.text-preset-2 {
+    font-family: var(--font-youngSerif-Regular);
+    font-size: 28px;
+    line-height: 100%;
+}
+
+.text-preset-3 {
+    font-family: var(--font-outfit);
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.text-preset-4 {
+    font-family: var(--font-outfit);
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.text-preset-4-bold {
+    font-family: var(--font-outfit);
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 700;
+}
