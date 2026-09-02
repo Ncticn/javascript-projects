@@ -17,10 +17,11 @@ jobs:
         run: |
           mkdir deploy
 
-          cp -r 001-qr-code-component deploy/
-          cp -r 002-blog-preview-card deploy/
-          cp -r 003-social-links-profile deploy/
-          cp -r 004-recipe-page deploy/
+          for project in */; do
+            if [ -f "$project/index.html" ]; then
+              cp -r "$project" "deploy/"
+            fi
+          done
 
       - name: Deploy to ncticn.github.io
         uses: peaceiris/actions-gh-pages@v4
