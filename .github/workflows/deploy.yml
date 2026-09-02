@@ -17,13 +17,17 @@ jobs:
         run: |
           mkdir deploy
 
+          cp index.html deploy/
+          cp styles.css deploy/
+          cp app.js deploy/
+
           for project in */; do
             if [ -f "$project/index.html" ]; then
               cp -r "$project" "deploy/"
             fi
           done
 
-      - name: Deploy to ncticn.github.io
+      - name: Deploy projects
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
