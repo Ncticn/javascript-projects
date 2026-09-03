@@ -20,7 +20,7 @@ jobs:
       - name: Copy projects
         run: |
           for project in */; do
-            if [ -f "$project/index.html" ]; then
+            if [ "$project" != "live-site/" ] && [ -f "$project/index.html" ]; then
               rm -rf "live-site/$project"
               cp -r "$project" "live-site/"
             fi
