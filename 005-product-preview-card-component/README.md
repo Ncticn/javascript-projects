@@ -1,8 +1,8 @@
-# 📌 Recipe Page
+# 📌 Product Preview Card Component
 
-This project is a solution to the "Recipe Page" challenge on Frontend Mentor.
+This project is a solution to the "Product Preview Card Component" challenge on Frontend Mentor.
 
-The challenge focuses on building a recipe page with a strong emphasis on writing semantic HTML. The goal was to choose the most appropriate HTML elements for each piece of content while reproducing the provided design as closely as possible.
+The challenge focuses on building a responsive product preview card component using HTML and CSS. The goal was to reproduce the provided design as closely as possible while ensuring the component adapts appropriately to different screen sizes and includes the required interactive states.
 
 
 ## 🖼️ Preview
@@ -13,15 +13,17 @@ The challenge focuses on building a recipe page with a strong emphasis on writin
 
 During the development of this project, the following aspects were implemented:
 
-- Creating a responsive recipe page layout
-- Structuring the page using semantic HTML elements
-- Displaying recipe information in a clear and organized layout
-- Creating sections for preparation time, ingredients, and instructions
-- Using appropriate HTML elements for different types of content
-- Styling the recipe page to match the provided design
-- Applying the provided colors, typography, spacing, and visual hierarchy
+- Creating a responsive product preview card component
+- Structuring the component using semantic HTML elements
+- Displaying product information in a clear and organized layout
+- Creating a responsive layout for different device screen sizes
 - Reproducing the provided mobile and desktop layouts
+- Implementing hover states for interactive elements
+- Implementing focus states for interactive elements
+- Styling the product card to match the provided design
+- Applying the provided colors, typography, spacing, and visual hierarchy
 - Matching the provided design as closely as possible
+
 
 
 
@@ -29,15 +31,15 @@ During the development of this project, the following aspects were implemented:
 
 Through this project, I practiced:
 
-- Structuring web pages with semantic HTML
-- Choosing appropriate HTML elements for different types of content
-- Organizing recipe information using meaningful HTML structure
+- Structuring components with semantic HTML
 - Creating responsive layouts with CSS
 - Working with typography, colors, spacing, and visual hierarchy
+- Implementing hover and focus states with CSS
+- Creating layouts that adapt to different screen sizes
 - Translating a provided design into a functional web interface
-- Improving accessibility and document structure through semantic markup
-- Paying closer attention to HTML semantics when building web pages
-- Improving attention to detail when reproducing a professional UI design
+- Improving accessibility through appropriate interactive states
+- Paying closer attention to visual details when reproducing a professional UI design
+
 
 
 
@@ -47,14 +49,14 @@ Through this project, I practiced:
 - **Styling:** CSS
 - **Responsive Design:** Mobile, tablet & desktop layouts
 - **Layout:** CSS Box Model & Flexbox
-- **Interactive States:** Appropriate HTML elements for content
+- **Interactive States:** Hover & focus states
 - **Code Formatting:** Prettier
 - **Version Control:** Git & GitHub
 
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://ncticn.github.io/004-recipe-page/
+- 💻 **Live Demo:** https://ncticn.github.io/005-product-preview-card-component/
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/recipe-page-html-css-IUgWO09ZPp
 
 
@@ -67,7 +69,7 @@ To run this project locally, follow these steps:
 git clone https://github.com/Ncticn/javascript-projects.git
 
 # Navigate to the project directory
-cd 004-recipe-page
+cd 005-product-preview-card-component
 
 # Install dependencies
 npm install

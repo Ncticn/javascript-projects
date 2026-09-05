@@ -1,0 +1,43 @@
+name: Deploy Projects
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout javascript-projects
+        uses: actions/checkout@v5
+
+      - name: Clone live site
+        run: |
+          git clone https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/ncticn/ncticn.github.io.git live-site
+
+      - name: Copy projects
+        run: |
+          for project in */; do
+            if [ "$project" != "live-site/" ] && [ -f "$project/index.html" ]; then
+              rm -rf "live-site/$project"
+              cp -r "$project" "live-site/"
+            fi
+          done
+
+      - name: Commit and push changes
+        run: |
+          cd live-site
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if git diff --cached --quiet; then
+            echo "No changes to deploy."
+          else
+            git commit -m "Deploy projects"
+            git push origin main
+          fi
