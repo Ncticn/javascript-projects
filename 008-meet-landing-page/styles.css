@@ -1,0 +1,49 @@
+:root {
+
+    /* Font Family */
+    --font-red-hat-display: "Red Hat Display", sans-serif;
+
+    /* Colors */
+    --color-cyan-600: #4D96A9;
+    --color-cyan-300: #8FE3F9;
+    --color-purple-600: #855FB1;
+    --color-purple-300: #D9B8FF;
+    --color-slate-900: #28283D;
+    --color-slate-600: #87879D;
+    --color-slate-300: #D1D1DF;
+    --color-white: #FAFAFA;
+
+    /* Spacing */
+    --spacing-1400: 112px;
+    --spacing-1000: 80px;
+    --spacing-900: 72px;
+    --spacing-800: 64px;
+    --spacing-700: 56px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
