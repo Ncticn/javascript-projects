@@ -1,0 +1,52 @@
+:root {
+
+    /* Font Family */
+    --font-Manrope: "Manrope", sans-serif;
+
+    /* Color */
+    --color-white: #FFFFFF;
+    --color-grey-900: #48556A;
+    --color-grey-500: #6E8098;
+    --color-grey-400: #9DAEC2;
+    --color-grey-200: #ECF2F8;
+
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-600: 3rem;
+    --spacing-700: 3.5rem;
+    --spacing-800: 4rem;
+    --spacing-1300: 6.5rem;
+    --spacing-2000: 10rem;
+
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-Manrope);
+}
+
+body {
+    min-height: 100dvh;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
