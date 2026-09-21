@@ -50,3 +50,25 @@ ul,
 ol {
     list-style: none;
 }
+
+
+.text-preset-1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-2 {
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+}
+
+.text-preset-3 {
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 25%;
+}
