@@ -35,5 +35,56 @@
     --spacing-800: 4rem;
     --spacing-900: 4.5rem;
     --spacing-1300: 6.5rem;
-    
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue-700);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.text-preset-1 {
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+.text-preset-2 {
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.text-preset-3 {
+    font-size: .75rem;
+    line-height: 150%;
+}
+
+.font-bold {
+    font-family: var(--font-roboto-bold);
+    font-weight: 700;
+}
+
+.font-regular {
+    font-family: var(--font-roboto-regular);
+    font-weight: 400;
 }
