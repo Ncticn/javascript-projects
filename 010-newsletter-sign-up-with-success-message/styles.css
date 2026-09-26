@@ -11,3 +11,29 @@
     font-weight: 400;
     font-style: normal;
 }
+
+:root {
+
+    /* Font Family */
+    --font-roboto-bold: "Roboto Bold", sans-serif;
+    --font-roboto-regular: "Roboto Regular", sans-serif;
+
+    /* Colors */
+    --color-white: #FFFFFF;
+    --color-grey: #949494;
+    --color-blue-800: #242742;
+    --color-blue-700: #36384D;
+    --color-red: #FF6155;
+
+    /* Spacing */
+    --spacing-100: .5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-600: 3rem;
+    --spacing-800: 4rem;
+    --spacing-900: 4.5rem;
+    --spacing-1300: 6.5rem;
+    
+}
