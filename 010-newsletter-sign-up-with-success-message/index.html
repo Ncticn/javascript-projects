@@ -16,6 +16,65 @@
     <main>
         <section>
 
+            <article class="newsletter-sign-up-card">
+                <div class="newsletter-sign-up-card-wrapper">
+                    <div class="newsletter-sign-up-card-image">
+                        <picture>
+                            <source media="(min-width:1024px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+                            <source media="(min-width:768px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+                            <source media="(min-width:0)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+                            
+                            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+                        </picture>
+                    </div>
+
+
+                    <div class="newsletter-sign-up-card-content-and-form">
+                        <div class="newsletter-sign-up-card-content">
+                            <h1 class="newsletter-sign-up-card-title text-preset-1 font-bold">
+                                Stay updated!
+                            </h1>
+                            <p class="newsletter-sign-up-card-description text-preset-2 font-regular">
+                                Join 60,000+ product managers receiving monthly updates on:
+                            </p>
+                            <ul class="newsletter-sign-up-card-list">
+                                <li class="newsletter-sign-up-card-list-item text-preset-2 font-regular">
+                                    Product discovery and building what matters
+                                </li>
+                                <li class="newsletter-sign-up-card-list-item text-preset-2 font-regular">
+                                    Measuring to ensure updates are a success
+                                </li>
+                                <li class="newsletter-sign-up-card-list-item text-preset-2 font-regular">
+                                    And much more!
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="newsletter-sign-up-card-form">
+                            <form action="" class="newsletter-sign-up-card-form-email">
+                                <div class="form-item">
+                                    <div class="form-input-label-and-error">
+                                        <label for="input-email" class="form-input-label text-preset-3 font-bold">
+                                            Email address
+                                        </label>
+                                        <span id="input-email-error" aria-live="polite"
+                                            class="form-input-error text-preset-3 font-bold">
+                                            Valid email required
+                                        </span>
+                                    </div>
+                                    <input type="email" id="input-email" name="email" class="text-preset-2 font-regular"
+                                        placeholder="email@company.com" />
+                                </div>
+                                <button type="submit" class="form-button-submit text-preset-2 font-bold">
+                                    Subscribe to monthly newsletter
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
             <!-- ? İnput Component -->
             <!-- <div class="form-item">
                 <div class="form-input-label-and-error">

@@ -50,7 +50,7 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     background-color: var(--color-blue-700);
     letter-spacing: 0;
@@ -141,7 +141,7 @@ input:not(:placeholder-shown) {
 }
 
 .form-item-error input:focus,
-input:not(:placeholder-shown) {
+.form-item-error input:not(:placeholder-shown) {
     border-color: var(--color-red);
 }
 
@@ -152,7 +152,7 @@ input:not(:placeholder-shown) {
     color: var(--color-white);
     background: var(--color-blue-800);
     border-radius: 8px;
-    padding: var(--spacing-200) var(--spacing-600);
+    padding: var(--spacing-200) var(--spacing-500);
     cursor: pointer;
     border: none;
     transition: outline 150ms linear;
@@ -173,11 +173,84 @@ input:not(:placeholder-shown) {
     transition: opacity 150ms linear;
 }
 
-.form-button-submit:hover::before{
+.form-button-submit:hover::before {
     opacity: 1;
 }
 
 .form-button-submit:focus-visible {
     outline: 3px solid var(--color-blue-800);
     outline-offset: 2px;
+}
+
+
+.newsletter-sign-up-card {
+    background-color: var(--color-white);
+    min-height: 100dvh; 
+}
+
+.newsletter-sign-up-card-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-500);
+}
+
+.newsletter-sign-up-card-content-and-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-500);
+    padding: 0 var(--spacing-300);
+}
+
+.newsletter-sign-up-card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-300);
+}
+
+.newsletter-sign-up-card-title,
+.newsletter-sign-up-card-description,
+.newsletter-sign-up-card-list-item {
+    color: var(--color-blue-800);
+    text-align: left;
+}
+
+.newsletter-sign-up-card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-100);
+}
+
+.newsletter-sign-up-card-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-200);
+}
+
+.newsletter-sign-up-card-list-item::before {
+    display: inline-block;
+    flex-shrink: 0;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url(./assets/icons/icon-list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.newsletter-sign-up-card-form-email{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--spacing-300);
 }
