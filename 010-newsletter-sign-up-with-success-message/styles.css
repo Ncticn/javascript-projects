@@ -65,6 +65,43 @@ ol {
     list-style: none;
 }
 
+button {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: var(--color-white);
+    background: var(--color-blue-800);
+    border-radius: 8px;
+    padding: var(--spacing-200) var(--spacing-500);
+    cursor: pointer;
+    border: none;
+    transition: outline 150ms linear;
+    z-index: 0;
+    overflow: hidden;
+}
+
+button::before {
+    position: absolute;
+    display: block;
+    content: "";
+    inset: 0;
+    background: #FF6A3A;
+    background: linear-gradient(90deg, rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button:focus-visible {
+    outline: 3px solid var(--color-blue-800);
+    outline-offset: 2px;
+}
+
 .text-preset-1 {
     font-size: 2.5rem;
     line-height: 100%;
@@ -145,43 +182,6 @@ input:not(:placeholder-shown) {
     border-color: var(--color-red);
 }
 
-.form-button-submit {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    color: var(--color-white);
-    background: var(--color-blue-800);
-    border-radius: 8px;
-    padding: var(--spacing-200) var(--spacing-500);
-    cursor: pointer;
-    border: none;
-    transition: outline 150ms linear;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.form-button-submit::before {
-    position: absolute;
-    display: block;
-    content: "";
-    inset: 0;
-    background: #FF6A3A;
-    background: linear-gradient(90deg, rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
-    z-index: -1;
-    border-radius: inherit;
-    opacity: 0;
-    transition: opacity 150ms linear;
-}
-
-.form-button-submit:hover::before {
-    opacity: 1;
-}
-
-.form-button-submit:focus-visible {
-    outline: 3px solid var(--color-blue-800);
-    outline-offset: 2px;
-}
-
 
 .newsletter-sign-up-card {
     background-color: var(--color-white);
@@ -258,17 +258,17 @@ input:not(:placeholder-shown) {
 
 
 @media screen and (min-width:768px) {
-    body{
+    body {
         align-items: center;
     }
 
-    .newsletter-sign-up-card{
+    .newsletter-sign-up-card {
         min-height: auto;
         border-radius: 36px;
         padding: var(--spacing-500);
     }
 
-    .newsletter-sign-up-card-content-and-form{
+    .newsletter-sign-up-card-content-and-form {
         gap: var(--spacing-300);
         padding: 0;
     }
@@ -276,27 +276,28 @@ input:not(:placeholder-shown) {
 
 @media screen and (min-width:1024px) {
 
-    .newsletter-sign-up-card{
+    .newsletter-sign-up-card {
         border-radius: 36px;
         padding: var(--spacing-400);
         max-width: 56.5rem;
     }
 
-    .newsletter-sign-up-card-wrapper{
+    .newsletter-sign-up-card-wrapper {
         flex-flow: row nowrap;
         gap: var(--spacing-800);
         align-items: center;
     }
 
-    .newsletter-sign-up-card-image{
+    .newsletter-sign-up-card-image {
         order: 1;
     }
 
-    .newsletter-sign-up-card-content-and-form{
+    .newsletter-sign-up-card-content-and-form {
         order: 0;
     }
 
-    .newsletter-sign-up-card-content, .newsletter-sign-up-card-form{
+    .newsletter-sign-up-card-content,
+    .newsletter-sign-up-card-form {
         gap: var(--spacing-400);
     }
 
