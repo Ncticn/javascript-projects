@@ -46,6 +46,10 @@
     padding: 0;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 body {
     min-height: 100dvh;
     display: flex;
@@ -102,6 +106,23 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
+input {
+    border: 1px solid var(--color-grey);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    padding: var(--spacing-200) var(--spacing-300);
+    outline: none;
+    color: var(--color-blue-800);
+    transition: border 150ms linear;
+    width: 100%;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-color: var(--color-blue-800);
+}
+
+
 .text-preset-1 {
     font-size: 2.5rem;
     line-height: 100%;
@@ -127,7 +148,89 @@ button:focus-visible {
     font-weight: 400;
 }
 
-.form-item {
+
+.newsletter-card__panel {
+    background-color: var(--color-white);
+    min-height: 100dvh;
+}
+
+.newsletter-card__inner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-500);
+}
+
+.newsletter-card__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.newsletter-card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-500);
+    padding: 0 var(--spacing-300);
+}
+
+.newsletter-card__intro {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-300);
+}
+
+.newsletter-card__title,
+.newsletter-card__description,
+.newsletter-card__list-item {
+    color: var(--color-blue-800);
+    text-align: left;
+}
+
+.newsletter-card__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: var(--spacing-100);
+}
+
+.newsletter-card__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-200);
+}
+
+.newsletter-card__list-item::before {
+    display: inline-block;
+    flex-shrink: 0;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url(./assets/icons/icon-list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* .newsletter-card__form-wrapper{} */
+
+
+
+.newsletter-card__form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--spacing-300);
+}
+
+.newsletter-card__form-item {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -152,115 +255,23 @@ button:focus-visible {
     transition: opacity 150ms linear;
 }
 
-input {
-    border: 1px solid var(--color-grey);
-    border-radius: 8px;
-    background-color: var(--color-white);
-    padding: var(--spacing-200) var(--spacing-300);
-    outline: none;
-    color: var(--color-blue-800);
-    transition: border 150ms linear;
-}
 
-input:focus,
-input:not(:placeholder-shown) {
-    border-color: var(--color-blue-800);
-}
-
-.form-item-error .form-input-error {
+.is-error .form-input-error {
     opacity: 100%;
 }
 
-.form-item-error input {
+.is-error input {
     border-color: var(--color-red);
     color: var(--color-red);
     background-color: #FFE7E6;
 }
 
-.form-item-error input:focus,
-.form-item-error input:not(:placeholder-shown) {
+.is-error input:focus,
+.is-error input:not(:placeholder-shown) {
     border-color: var(--color-red);
 }
 
-
-.newsletter-sign-up-card {
-    background-color: var(--color-white);
-    min-height: 100dvh;
-}
-
-.newsletter-sign-up-card-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: start;
-    gap: var(--spacing-500);
-}
-
-.newsletter-sign-up-card-content-and-form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: start;
-    gap: var(--spacing-500);
-    padding: 0 var(--spacing-300);
-}
-
-.newsletter-sign-up-card-content {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: start;
-    gap: var(--spacing-300);
-}
-
-.newsletter-sign-up-card-title,
-.newsletter-sign-up-card-description,
-.newsletter-sign-up-card-list-item {
-    color: var(--color-blue-800);
-    text-align: left;
-}
-
-.newsletter-sign-up-card-list {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: start;
-    gap: var(--spacing-100);
-}
-
-.newsletter-sign-up-card-list-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-200);
-}
-
-.newsletter-sign-up-card-list-item::before {
-    display: inline-block;
-    flex-shrink: 0;
-    content: "";
-    width: 21px;
-    height: 21px;
-    background-image: url(./assets/icons/icon-list.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    vertical-align: middle;
-}
-
-.newsletter-sign-up-card-form-email {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    justify-content: center;
-    gap: var(--spacing-300);
-}
-
-
-
-
-.newsletter-sign-up-card-success {
-    background-color: var(--color-white);
-    min-height: 100dvh;
+.newsletter-card__panel--success {
     padding: 0 var(--spacing-200);
     display: flex;
     flex-direction: column;
@@ -268,7 +279,7 @@ input:not(:placeholder-shown) {
     align-items: center;
 }
 
-.newsletter-sign-up-card-success-wrapper {
+.newsletter-card__success-inner {
     min-height: 623px;
     display: flex;
     flex-direction: column;
@@ -277,7 +288,7 @@ input:not(:placeholder-shown) {
     gap: 0;
 }
 
-.newsletter-sign-up-card-success-content {
+.newsletter-card__success-intro {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -285,31 +296,27 @@ input:not(:placeholder-shown) {
     gap: var(--spacing-400);
 }
 
-.newsletter-sign-up-card-success-content-title {
-    color: var(--color-blue-800);
-}
-
-.newsletter-sign-up-card-success-content-description {
-    color: var(--color-blue-800);
-}
-
-.newsletter-sign-up-card-success-content-description-link {
-    color: inherit;
-}
-
-.newsletter-sign-up-card-success-image {
+.newsletter-card__success-image {
     width: 4rem;
     height: 4rem;
     display: inline-block;
 }
 
+.newsletter-card__success-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
+.newsletter-card__success-title,
+.newsletter-card__success-description {
+    color: var(--color-blue-800);
 
+}
 
-
-
-
-
+.newsletter-card__success-email-link {
+    color: inherit;
+}
 
 
 
@@ -323,56 +330,57 @@ input:not(:placeholder-shown) {
         font-size: 3.5rem;
     }
 
-    .newsletter-sign-up-card {
+    .newsletter-card__panel {
         min-height: auto;
         border-radius: 36px;
         padding: var(--spacing-500);
     }
 
-    .newsletter-sign-up-card-content-and-form {
+    .newsletter-card__body {
         gap: var(--spacing-300);
         padding: 0;
     }
 
-
-    .newsletter-sign-up-card-success {
-        min-height: auto;
+    .newsletter-card__panel--success {
         max-width: 504px;
-        border-radius: 36px;
         padding: var(--spacing-800);
     }
 
-    .newsletter-sign-up-card-success-wrapper {
+    .newsletter-card__success-inner {
         min-height: auto;
         gap: var(--spacing-400);
     }
 
 }
 
+
+
+
 @media screen and (min-width:1024px) {
 
-    .newsletter-sign-up-card {
-        border-radius: 36px;
+    .newsletter-card__panel:not:has(.newsletter-card__panel--success) {
         padding: var(--spacing-400);
         max-width: 56.5rem;
     }
 
-    .newsletter-sign-up-card-wrapper {
+    .newsletter-card__inner {
         flex-flow: row nowrap;
         gap: var(--spacing-800);
         align-items: center;
     }
 
-    .newsletter-sign-up-card-image {
+    .newsletter-card__image {
         order: 1;
+        flex: 1;
     }
 
-    .newsletter-sign-up-card-content-and-form {
+    .newsletter-card__body {
         order: 0;
+        flex: 1;
     }
 
-    .newsletter-sign-up-card-content,
-    .newsletter-sign-up-card-form {
+    .newsletter-card__intro,
+    .newsletter-card__form-wrapper {
         gap: var(--spacing-400);
     }
 
