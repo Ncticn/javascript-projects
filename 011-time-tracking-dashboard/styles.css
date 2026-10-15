@@ -1,8 +1,8 @@
-:root{
+:root {
 
     /* Font Family */
     --font-Rubik: "Rubik", sans-serif;
-    
+
     /* Colors */
     --color-white: #FFFFFF;
     --color-black: #000000;
@@ -30,7 +30,9 @@
 }
 
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,10 +42,57 @@ a {
     text-decoration: none;
 }
 
-ul, ol{
+ul,
+ol {
     list-style: none;
 }
 
 [hidden] {
     display: none !important;
+}
+
+
+.font-regular {
+    font-weight: 400 !important;
+}
+
+.font-medium {
+    font-weight: 500 !important;
+}
+
+
+.text-preset-1 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.125rem;
+}
+
+.text-preset-2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 2.938rem;
+}
+
+.text-preset-3 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.375rem;
+}
+
+.text-preset-4 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.text-preset-5 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+}
+
+.text-preset-6 {
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.125rem;
 }
