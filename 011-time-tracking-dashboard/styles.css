@@ -1,5 +1,5 @@
 :root{
-    
+
     /* Font Family */
     --font-Rubik: "Rubik", sans-serif;
     
@@ -27,4 +27,23 @@
     --spacing-300: 1.5rem;
     --spacing-400: 2rem;
     --spacing-500: 2.5rem;
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+[hidden] {
+    display: none !important;
 }
