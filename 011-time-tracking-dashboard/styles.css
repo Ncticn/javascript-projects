@@ -47,6 +47,10 @@ ol {
     list-style: none;
 }
 
+html{
+    font-family: var(--font-Rubik);
+}
+
 [hidden] {
     display: none !important;
 }
@@ -95,4 +99,38 @@ ol {
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 1.125rem;
+}
+
+.card-header{
+    background-color: var(--color-navy-950);
+    padding: var(--spacing-100) var(--spacing-200);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.card-header__title{
+    color: var(--color-white);
+}
+
+.card-haeder-btn{
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.card-haeder-btn svg{
+    fill: var(--color-white);
+    transition: 150ms fill linear;
+}
+
+.card-haeder-btn:hover svg {
+    fill: var(--color-navy-200);
+}
+
+.card-haeder-btn:focus-visible{
+    outline: 2px solid var(--color-navy-200);
+    outline-offset: 3px;
 }
