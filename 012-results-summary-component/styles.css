@@ -94,7 +94,7 @@ button::before {
     z-index: -10;
 }
 
-button:hover::before{
+button:hover::before {
     opacity: 1;
 }
 
@@ -148,4 +148,55 @@ button:focus-visible {
 
 .font-extrabold {
     font-weight: 800;
+}
+
+
+.summary-item {
+    border-radius: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1rem var(--spacing-200);
+}
+
+.summary-item__label,
+.summary-item__score {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-item__label {
+    gap: var(--spacing-200);
+}
+
+.summary-item__score {
+    gap: var(--spacing-100);
+    color: var(--color-navy-950);
+}
+
+.summary-item__score p:last-child {
+    opacity: 50%;
+}
+
+[data-state="summary-item__reaction"]:not(.summary-item__score) {
+    background-color: var(--color-red-50);
+    color: var(--color-red-400);
+}
+
+[data-state="summary-item__memory"]:not(.summary-item__score) {
+    background-color: var(--color-yellow-50);
+    color: var(--color-yellow-400);
+}
+
+[data-state="summary-item__verbal"]:not(.summary-item__score) {
+    background-color: var(--color-green-50);
+    color: var(--color-green-500);
+}
+
+[data-state="summary-item__visual"]:not(.summary-item__score) {
+    background-color: var(--color-blue-50);
+    color: var(--color-blue-800);
 }
