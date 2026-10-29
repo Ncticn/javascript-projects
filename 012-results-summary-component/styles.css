@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Hanken Grotesk";
     src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
-    font-weight: 500 700;
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -42,7 +42,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: var(--font-Hanken-Grotesk);
     letter-spacing: 0;
 }
@@ -67,4 +67,47 @@ ol {
 
 [hidden] {
     display: none !important;
+}
+
+.text-3xl {
+    font-size: 4.5rem;
+    line-height: 100%;
+}
+
+.text-2xl {
+    font-size: 3.5rem;
+    line-height: 100%;
+}
+
+.text-xl {
+    font-size: 2rem;
+    line-height: 130%;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.text-md {
+    font-size: 1.125rem;
+    line-height: 130%;
+}
+
+.text-sm {
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-extrabold {
+    font-weight: 800;
 }
