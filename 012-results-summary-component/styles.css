@@ -65,6 +65,44 @@ ol {
     list-style: none;
 }
 
+button {
+    text-align: center;
+    display: inline-block;
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-navy-950);
+    border-radius: 128px;
+    padding: 1.019rem;
+    max-width: 100%;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: #7755FF;
+    background: linear-gradient(180deg, rgba(119, 85, 255, 1) 0%, rgba(47, 44, 233, 1) 100%);
+    opacity: 0;
+    transition: opacity 150ms linear;
+    color: var(--color-white);
+    z-index: -10;
+}
+
+button:hover::before{
+    opacity: 1;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--color-navy-950);
+    outline-offset: 3px;
+}
+
 [hidden] {
     display: none !important;
 }
