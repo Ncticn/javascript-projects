@@ -12,18 +12,39 @@
 
 <body>
 
-    <button type="button" aria-label="Continue" class="text-md font-bold">
+    <button type="button" aria-label="Continue" class="summary__button text-md font-bold">
         Continue
     </button>
 
-    <div class="summary-item" data-state="summary-item__reaction">
+    <div class="summary-item" data-variant="reaction">
         <div class="summary-item__label">
-            <img src="./assets/icons/icon-reaction.svg" alt="">
-            <h3 class="text-preset-5 font-medium">Reaction</h3>
+            <img class="summary-item__icon" src="./assets/icons/icon-reaction.svg" alt="">
+            <h3 class="summary-item__title text-md font-medium">Reaction</h3>
         </div>
         <div class="summary-item__score">
-            <p class="text-preset-6 font-bold">80</p>
-            <p class="text-preset-6 font-bold">/ 100</p>
+            <p class="summary-item__value text-md font-bold">80</p>
+            <p class="summary-item__total text-md font-bold">/ 100</p>
+        </div>
+    </div>
+
+    <div class="card-result">
+        <div class="card-result__content">
+            <h1 class="card-result__title text-lg font-bold">Your Result</h1>
+            <div class="card-result__circle">
+                <p class="card-result__value text-3xl font-extrabold" style="color: white;">
+                    76
+                </p>
+                <p class="card-result__total text-md font-medium" style="color: #CAC9FF; opacity: 50%;">
+                    of 100
+                </p>
+            </div>
+
+            <div class="card-result__feedback">
+                <h2 class="card-result__rating text-xl font-bold">Great</h2>
+                <p class="card-result__description text-md font-medium">
+                    You scored higher than 65% of the people who have taken these tests.
+                </p>
+            </div>
         </div>
     </div>
 
