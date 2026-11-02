@@ -11,42 +11,107 @@
 </head>
 
 <body>
+    <main>
+        <section class="results-summary">
+            <div class="resulst-summary__wrapper">
+                <div class="card-result">
+                    <div class="card-result__content">
+                        <h1 class="card-result__title text-md font-bold">Your Result</h1>
+                        <div class="card-result__circle">
+                            <p class="card-result__value text-2xl font-extrabold" style="color: white;">
+                                76
+                            </p>
+                            <p class="card-result__total text-sm font-medium" style="color: #CAC9FF; opacity: 50%;">
+                                of 100
+                            </p>
+                        </div>
 
-    <button type="button" aria-label="Continue" class="summary__button text-md font-bold">
+                        <div class="card-result__feedback">
+                            <h2 class="card-result__rating text-lg font-bold">Great</h2>
+                            <p class="card-result__description text-sm font-medium">
+                                You scored higher than 65% of the people who have taken these tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary__content">
+                    <h3 class="text-md font-bold">Summary</h3>
+                    <ul class="summary-item-list">
+                        <li class="summary-items">
+                            <div class="summary-item" data-variant="reaction">
+                                <div class="summary-item__label">
+                                    <img class="summary-item__icon" src="./assets/icons/icon-reaction.svg" alt="">
+                                    <h3 class="summary-item__title text-sm font-medium">Reaction</h3>
+                                </div>
+                                <div class="summary-item__score">
+                                    <p class="summary-item__value text-sm font-bold">80</p>
+                                    <p class="summary-item__total text-sm font-bold">/ 100</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="summary-items">
+                            <div class="summary-item" data-variant="memory">
+                                <div class="summary-item__label">
+                                    <img class="summary-item__icon" src="./assets/icons/icon-memory.svg" alt="">
+                                    <h3 class="summary-item__title text-sm font-medium">Memory</h3>
+                                </div>
+                                <div class="summary-item__score">
+                                    <p class="summary-item__value text-sm font-bold">92</p>
+                                    <p class="summary-item__total text-sm font-bold">/ 100</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="summary-items">
+                            <div class="summary-item" data-variant="verbal">
+                                <div class="summary-item__label">
+                                    <img class="summary-item__icon" src="./assets/icons/icon-verbal.svg" alt="">
+                                    <h3 class="summary-item__title text-sm font-medium">Verbal</h3>
+                                </div>
+                                <div class="summary-item__score">
+                                    <p class="summary-item__value text-sm font-bold">61</p>
+                                    <p class="summary-item__total text-sm font-bold">/ 100</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="summary-items">
+                            <div class="summary-item" data-variant="visual">
+                                <div class="summary-item__label">
+                                    <img class="summary-item__icon" src="./assets/icons/icon-visual.svg" alt="">
+                                    <h3 class="summary-item__title text-sm font-medium">Visual</h3>
+                                </div>
+                                <div class="summary-item__score">
+                                    <p class="summary-item__value text-sm font-bold">73</p>
+                                    <p class="summary-item__total text-sm font-bold">/ 100</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" aria-label="Continue" class="summary__button text-md font-bold">
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- <button type="button" aria-label="Continue" class="summary__button text-md font-bold">
         Continue
     </button>
 
     <div class="summary-item" data-variant="reaction">
         <div class="summary-item__label">
             <img class="summary-item__icon" src="./assets/icons/icon-reaction.svg" alt="">
-            <h3 class="summary-item__title text-md font-medium">Reaction</h3>
+            <h3 class="summary-item__title text-sm font-medium">Reaction</h3>
         </div>
         <div class="summary-item__score">
-            <p class="summary-item__value text-md font-bold">80</p>
-            <p class="summary-item__total text-md font-bold">/ 100</p>
+            <p class="summary-item__value text-sm font-bold">80</p>
+            <p class="summary-item__total text-sm font-bold">/ 100</p>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card-result">
-        <div class="card-result__content">
-            <h1 class="card-result__title text-lg font-bold">Your Result</h1>
-            <div class="card-result__circle">
-                <p class="card-result__value text-3xl font-extrabold" style="color: white;">
-                    76
-                </p>
-                <p class="card-result__total text-md font-medium" style="color: #CAC9FF; opacity: 50%;">
-                    of 100
-                </p>
-            </div>
 
-            <div class="card-result__feedback">
-                <h2 class="card-result__rating text-xl font-bold">Great</h2>
-                <p class="card-result__description text-md font-medium">
-                    You scored higher than 65% of the people who have taken these tests.
-                </p>
-            </div>
-        </div>
-    </div>
 
 </body>
 
