@@ -69,3 +69,20 @@ function calculateAverage(numbers) {
     const sum = numbers.reduce((prev, current) => prev + current, 0);
     return Math.round(sum / numbers.length);
 }
+
+async function init() {
+
+    const items = await getData();
+
+    if (items.length === 0) {
+        summaryItemList.textContent = "Veriler yüklenemedi.";
+        return;
+    }
+
+    summaryItemList.append(...items.map(createSummaryItem));
+    cardResultValue.textContent = calculateAverage(items.map(item => item.score));
+
+}
+
+
+init();
