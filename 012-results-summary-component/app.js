@@ -56,3 +56,16 @@ function createSummaryItem({ category, icon, score }) {
     return li;
 
 }
+
+function calculateAverage(numbers) {
+
+    if (!Array.isArray(numbers) || numbers.length === 0) return 0;
+
+    if (!numbers.every(Number.isFinite)) {
+        console.error("Dizi sadece sayılardan oluşmalıdır.");
+        return 0;
+    }
+
+    const sum = numbers.reduce((prev, current) => prev + current, 0);
+    return Math.round(sum / numbers.length);
+}
