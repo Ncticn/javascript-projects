@@ -1,0 +1,48 @@
+:root {
+
+    /* Font Families */
+    --font-family-Outfit: 'Outfit', sans-serif;
+
+    /* Colors */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-blue-950: #0D192C;
+    --color-blue-900: #15263F;
+    --color-blue-800: #2E405A;
+    --color-blue-500: #8BACD9;
+    --color-cyan-400: #00FFF8;
+
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-100: .5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-Outfit);
+    background-color: var(--color-blue-950);
+    min-height: 100dvh;   
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+[hidden] {
+    display: none !important;
+}
