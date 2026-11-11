@@ -142,6 +142,7 @@ select {
     padding: var(--spacing-300);
     max-width: 21.875rem;
     filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.1));
+    Width: 100%;
 }
 
 .card-nft-preview__wrapper {
