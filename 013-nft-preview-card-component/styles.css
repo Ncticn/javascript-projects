@@ -176,24 +176,24 @@ select {
     pointer-events: none;
 }
 
-.card-nft-preview__image--img {
+.card-nft-preview__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
 }
 
-.card-nft-preview__content--title {
+.card-nft-preview__title {
     color: var(--color-white);
     margin-bottom: var(--spacing-200);
     transition: color 250ms linear;
 }
 
-.card-nft-preview__content--description {
+.card-nft-preview__description {
     color: var(--color-blue-500);
 }
 
-.card-nft-preview__content--info {
+.card-nft-preview__info {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
@@ -201,8 +201,8 @@ select {
     margin-block-start: var(--spacing-300);
 }
 
-.card-nft-preview__content--price,
-.card-nft-preview__content--time {
+.card-nft-preview__price,
+.card-nft-preview__time {
     display: inline-flex;
     flex-flow: row wrap;
     align-items: center;
@@ -211,11 +211,11 @@ select {
 }
 
 
-.card-nft-preview__content--price-text {
+.card-nft-preview__price-text {
     color: var(--color-cyan-400);
 }
 
-.card-nft-preview__content--time-text {
+.card-nft-preview__time-text {
     color: var(--color-blue-500);
 }
 
@@ -226,7 +226,7 @@ select {
     border: 1px solid var(--color-white);
 }
 
-.card-nft-preview__creator-avatar--img {
+.card-nft-preview__creator-avatar-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -258,7 +258,7 @@ select {
     opacity: 1;
 }
 
-.card-nft-preview:hover .card-nft-preview__content--title,
+.card-nft-preview:hover .card-nft-preview__title,
 .card-nft-preview:hover .card-nft-preview__creator-link {
     color: var(--color-cyan-400);
 }
