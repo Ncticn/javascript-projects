@@ -62,7 +62,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.github.io/013-nft-preview-card-component
-- 🧠 **Challenge:** [LİVE_SERVER_URL]
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/nft-preview-card-component-html-css-4krmWUsJL0
 
 
 ## ⚙️ Installation & Running the Project
