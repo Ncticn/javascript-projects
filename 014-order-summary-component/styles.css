@@ -56,8 +56,41 @@ select {
 
 body {
     font-family: var(--font-Red-Hat-Display);
+    letter-spacing: 0;
 }
 
 [hidden] {
     display: none !important;
+}
+
+.text-preset-1 {
+    font-size: var(--text-xl);
+    line-height: 135%;
+}
+
+.text-preset-2{
+    font-size: var(--text-lg);
+    line-height: 135%;
+}
+
+.text-preset-3{
+    font-size: var(--text-base);
+    line-height: 165%;
+}
+
+.text-preset-4{
+    font-size: var(--text-sm);
+    line-height: 165%;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
 }
