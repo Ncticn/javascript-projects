@@ -68,17 +68,17 @@ body {
     line-height: 135%;
 }
 
-.text-preset-2{
+.text-preset-2 {
     font-size: var(--text-lg);
     line-height: 135%;
 }
 
-.text-preset-3{
+.text-preset-3 {
     font-size: var(--text-base);
     line-height: 165%;
 }
 
-.text-preset-4{
+.text-preset-4 {
     font-size: var(--text-sm);
     line-height: 165%;
 }
@@ -93,4 +93,45 @@ body {
 
 .font-medium {
     font-weight: 500;
+}
+
+.btn {
+    border: none;
+    border-radius: 11px;
+    text-align: center;
+    padding: .75rem 0;
+    display: inline-block;
+    width: 100%;
+    filter: drop-shadow(0px 20px 20px rgba(56, 42, 225, 19.03%));
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--color-blue-700);
+    color: var(--color-white);
+    transition: background-color 150ms linear;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-purple-500);
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--color-blue-700);
+    outline-offset: 3px;
+}
+
+.btn-cancel {
+    background-color: var(--color-white);
+    color: var(--color-gray-600);
+    transition: color 150ms linear;
+}
+
+.btn-cancel:hover {
+    color: var(--color-blue-950);
+}
+
+.btn-cancel:focus-visible {
+    outline: 2px solid var(--color-blue-950);
+    outline-offset: 3px;
 }
