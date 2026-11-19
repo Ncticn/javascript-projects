@@ -112,6 +112,18 @@ body {
     font-weight: 500;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .btn {
     border: none;
     border-radius: 11px;
@@ -181,7 +193,7 @@ body {
     gap: var(--spacing-200);
 }
 
-.card-pricing__info {
+.card-pricing__text {
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -195,6 +207,7 @@ body {
 
 .card-pricing__price {
     color: var(--color-gray-600);
+    display: block;
 }
 
 .card-pricing__link {
@@ -217,22 +230,17 @@ body {
     background-color: var(--color-white);
     border-radius: 20px;
     filter: drop-shadow(0 40px 40px rgba(13, 48, 189, 15%));
-}
-
-.card-order-summary__image-wrapper {
-    border-radius: inherit;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    overflow: hidden;
 }
 
 .card-order-summary__image {
     display: block;
-    border-radius: inherit;
+    border-radius: 20px 20px 0 0;
     width: 100%;
 }
 
-.card-order-summary__container {
-    padding: var(--spacing-300) var(--spacing-400);
+.card-order-summary__body {
+    padding: var(--spacing-400) var(--spacing-300) ;
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
@@ -240,7 +248,7 @@ body {
     gap: var(--spacing-300);
 }
 
-.card-order-summary__content {
+.card-order-summary__header {
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
@@ -248,13 +256,13 @@ body {
     gap: var(--spacing-200);
 }
 
-.card-order-summary_title {
+.card-order-summary__title {
     color: var(--color-blue-950);
     text-align: center;
     display: block;
 }
 
-.card-order-summary_description {
+.card-order-summary__description {
     color: var(--color-gray-600);
     display: block;
     text-align: center;
@@ -294,7 +302,7 @@ body {
         margin: 0 auto;
     }
 
-    .card-order-summary__container {
+    .card-order-summary__body {
         padding: var(--spacing-600);
         gap: var(--spacing-200);
     }
