@@ -135,3 +135,74 @@ body {
     outline: 2px solid var(--color-blue-950);
     outline-offset: 3px;
 }
+
+
+
+.card-pricing {
+    padding: var(--spacing-200);
+    background-color: var(--color-blue-50);
+    border-radius: 11px;
+    display: inline-block;
+    width: 100%;
+}
+
+.card-pricing__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.card-pricing__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+    gap: var(--spacing-200);
+}
+
+.card-pricing__info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: start;
+    gap: 0;
+}
+
+.card-pricing__plan {
+    color: var(--color-blue-950);
+}
+
+.card-pricing__price {
+    color: var(--color-gray-600);
+}
+
+.card-pricing__link {
+    color: var(--color-blue-700);
+    transition: color 150ms ease-in-out;
+}
+
+.card-pricing__link:hover {
+    color: var(--color-purple-500);
+}
+
+.card-pricing__link:focus-visible {
+    outline: 2px solid var(--color-blue-700);
+    outline-offset: 3px;
+    border-radius: 11px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .text-preset-4 {
+        font-size: var(--text-base);
+        line-height: 165%;
+    }
+
+    .card-pricing {
+        padding: var(--spacing-300);
+    }
+}
